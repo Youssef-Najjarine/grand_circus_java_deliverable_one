@@ -39,7 +39,7 @@ public class Deliverable1 {
 			}
 			
 			sodaStock -= amountEntered;
-			if (sodaStock < sodaRestock) {
+			if (sodaStock <= sodaRestock) {
 				needsRestocking.add("Soda");
 			}
 			amountLeftMessage = MessageFormat.format("There are {0} Sodas left",sodaStock);
@@ -63,7 +63,7 @@ public class Deliverable1 {
 			}
 			
 			chipsStock -= amountEntered;
-			if (chipsStock < chipsRestock) {
+			if (chipsStock <= chipsRestock) {
 				needsRestocking.add("Chips");
 			}
 			amountLeftMessage = MessageFormat.format("There are {0} Chips left",chipsStock);
@@ -87,7 +87,7 @@ public class Deliverable1 {
 			}
 			
 			candyStock -= amountEntered;
-			if (candyStock < candyRestock) {
+			if (candyStock <= candyRestock) {
 				needsRestocking.add("Candy");
 			}
 			amountLeftMessage = MessageFormat.format("There are {0} Candies left",candyStock);
